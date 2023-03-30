@@ -1,0 +1,13 @@
+body{
+    background-color: aquamarine;
+}
+
+h1{
+    background-color: aliceblue;
+    display: block;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
