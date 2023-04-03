@@ -15,7 +15,6 @@ for(let i = 0; i  < elementos.length; i++){
     let {tag, texto} = elementos[i];
     let tagCriada = document.createElement(tag);
     tagCriada.innerHTML += texto;
-
     div.appendChild(tagCriada);
 }
 container.appendChild(div);

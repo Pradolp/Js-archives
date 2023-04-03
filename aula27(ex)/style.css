@@ -1,0 +1,16 @@
+body{
+    background-color: coral;
+}
+
+
+.container{
+    max-width: 1200px;
+    background-color: burlywood;
+    padding: 15px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+p{
+    font-size: 30px;
+}
