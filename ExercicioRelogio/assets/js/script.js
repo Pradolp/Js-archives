@@ -22,21 +22,52 @@ function startCount(){
     }, 1000);
 }
 
-iniciar.addEventListener('click', function(){
-    clearInterval(incrementar);
-    startCount();
-    timer.classList.remove('pausado');
 
-})
+// Colocando tudo dentro de uma função:
 
-pausar.addEventListener('click', function(){
-    clearInterval(incrementar);
-    timer.classList.add('pausado');
-})
+document.addEventListener('click', function(e){
+    const el = e.target;
 
-zerar.addEventListener('click', function(){
-    clearInterval(incrementar);
-    segundos = 0;
-    timer.innerHTML = "00:00:00";
-    timer.classList.remove('pausado');
-})
+    if(el.classList.contains('zerar')){
+        clearInterval(incrementar);
+        segundos = 0;
+        timer.innerHTML = "00:00:00";
+        timer.classList.remove('pausado');
+    }
+
+    if(el.classList.contains('pausar')){
+        clearInterval(incrementar);
+        timer.classList.add('pausado');
+    }
+
+    if(el.classList.contains('iniciar')){
+        clearInterval(incrementar);
+        startCount();
+        timer.classList.remove('pausado');
+    
+    }
+    
+});
+
+
+
+// iniciar.addEventListener('click', function(){
+//     clearInterval(incrementar);
+//     startCount();
+//     timer.classList.remove('pausado');
+
+    
+
+// })
+
+// pausar.addEventListener('click', function(){
+//     clearInterval(incrementar);
+//     timer.classList.add('pausado');
+// })
+
+// zerar.addEventListener('click', function(){
+//     clearInterval(incrementar);
+//     segundos = 0;
+//     timer.innerHTML = "00:00:00";
+//     timer.classList.remove('pausado');
+// })
