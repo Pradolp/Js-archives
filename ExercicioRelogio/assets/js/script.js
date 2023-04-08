@@ -17,7 +17,7 @@ let incrementar;
 
 function startCount(){
      incrementar = setInterval(function (){
-        segundos++;
+        segundos++ ;
         timer.innerHTML = getTimeSecond(segundos);
     }, 1000);
 }
