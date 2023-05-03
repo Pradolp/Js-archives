@@ -25,6 +25,7 @@ let a = 'A';
 let b = 'B';
 let c = 'C';
 
+// Isso aqui é poderoso
 const letras = [b, c, a];
 [a, b, c] = letras;
 
