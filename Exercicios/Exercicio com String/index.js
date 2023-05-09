@@ -1,6 +1,7 @@
 const nome = prompt("Digite o seu nome");
 console.log(typeof(nome));
 
+
 document.body.innerHTML = `O seu nome é ${nome} <br>`;
 document.body.innerHTML += `Seu nome tem ${nome.length - 3} letras <br>`;
 document.body.innerHTML += `A segunda letra do seu nome é ${nome[1]}<br>` ;
