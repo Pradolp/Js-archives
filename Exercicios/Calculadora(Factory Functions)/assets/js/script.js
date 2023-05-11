@@ -5,6 +5,16 @@ function criaCalculadora() {
 
         inicia() {
             this.cliqueBotoes();
+            this.cliqueEnter();
+        },
+
+        cliqueEnter(){
+            this.display.addEventListener('keyup', (e) =>{
+                
+                if(e.keyCode === 13){
+                    this.doCalculs();
+                }
+            })
         },
 
         clearDisplay() {
@@ -56,6 +66,9 @@ function criaCalculadora() {
                 if (el.classList.contains('btn-eq')) {
                     this.doCalculs();
                 }
+
+                // SE VOCÊ TIRAR ISSO, AO APERTAR ENTER ELE VAI FICAR CONCATENANDO OS NÚMEROS, PQ É AONDE VAI ESTAR O FOCO
+                this.display.focus();
             })
         },
 
