@@ -23,14 +23,13 @@ function criaCalculadora() {
                 conta = eval(conta);
 
                 if (!conta) {
-                    alert('Conta inválida');
-                    // como zerar o valor?
                     return;
                 }
 
                 this.display.value = String(conta);
             } catch (e) {
                 alert('Conta inválida');
+                this.clearDisplay();
                 return;
             }
 
